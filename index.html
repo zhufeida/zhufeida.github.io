@@ -13,6 +13,7 @@
     
     <!-- FontAwesome JS-->
     <script defer src="assets/fontawesome/all.js"></script> 
+
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
@@ -34,7 +35,7 @@
 				<div class="profile-section pt-3 pt-lg-0">
 				    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/zhufeida_square.png" alt="image" >			
 					
-					<div class="bio mb-3">Hi, my name is Feida. I am currently a postdoc research fellow at Nanyang Technological University, Singapore.  <br><a href="about.html">Find out more about me</a></div><!--//bio-->
+					<div class="bio mb-3">Hi, my name is Feida. I am currently a postdoc research fellow at Nanyang Technological University, Singapore.  <br><a href="#AboutMe">Find out more about me</a></div><!--//bio-->
 
 					<ul class="social-list list-inline py-3 mx-auto">
 			            <li class="list-inline-item"><a href="mailto:zhufeida@connect.hku.hk"><i class="far fa-envelope fa-fw"></i></a></li>
@@ -46,107 +47,266 @@
 				</div><!--//profile-section-->
 				
 				<ul class="navbar-nav flex-column text-left">
-					<li class="nav-item active">
-					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
-					</li>
 					<li class="nav-item">
-					    <a class="nav-link" href="blog-post.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Blog Post</a>
+					    <a class="nav-link" href="#publications"><i class="fas fa-bookmark fa-fw mr-2"></i>Publications</a>
 					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#WorkExperience"><i class="fas fa-briefcase fa-fw mr-2"></i>Work Experience</a>
+                    </li>
 					<li class="nav-item">
-					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+					    <a class="nav-link" href="#AboutMe"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
 					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv/朱飞达.pdf" target="_blank"><i class="fas fa-file fa-fw mr-2"></i>CV</a>
+                    </li>
 				</ul>
 				
 				<div class="my-2 my-md-3">
-				    <a class="btn btn-primary" href="#" target="_blank">Get in Touch</a>
+				    <a class="btn btn-primary" href="#Correspondence">Get in Touch</a>
 				</div>
 			</div>
 		</nav>
     </header>
     
+
+
+
+
     <div class="main-wrapper">
 	   
-	    <section class="blog-list px-3 py-5 p-md-5">
-		    <div class="container">
+	    <section class="blog-list  py-5 ">
+		    <div id="publications" class="container">
+
+                <h2 class="title mb-3">Publications</h2>
+
+                <div class="item mb-5">
+                    <div class="media">
+                        <img class="mr-1 img-fluid d-none d-md-flex" src="papers/4_MakeupTransfer.png" height="200" width="200" alt="image">
+                        <div class="media-body">
+                            <h6 >Semi-supervised Eye Makeup Transfer by Swapping Learned Representation</h6>
+                            <p  class="meta mb-1 date">Feida Zhu, Hongji Cao, Zunlei Feng, Yongqiang Zhang, Wenbin Luo, Hucheng Zhou, Mingli Song, and Kai-Kuang Ma. Accepted by 2019 ICCV Workshop </p>
+
+                            <a class="btn btn-link btn-sm" href="papers/4_MakeupTransfer.pdf" target="_blank"">PDF</a>
+                            
+                        </div><!--//media-body-->                                           
+                    </div><!--//media-->
+                </div><!--//item-->
+
+                <div class="item mb-5">
+                    <div class="media">
+                        <img class="mr-1 img-fluid d-none d-md-flex" src="papers/3_ImageSmooth.png" height="200" width="200" alt="image">
+                        <div class="media-body">
+                            <h6 >A benchmark for Edge-Preserving Image Smoothing</h6>
+                            <p  class="meta mb-1 date">Feida Zhu, Zetong Liang, Xixi Jia, Lei Zhang and Yizhou Yu. IEEE Transactions on Image Processing 28, no. 7 (2019): 3556-3570.</p>
+
+                            <a class="btn btn-link btn-sm" href="papers/3_zhu2019.pdf" target="_blank"">PDF</a>
+                            <a class="btn btn-link btn-sm" href="https://github.com/zhufeida/Benchmark_EPS" target="_blank"">Dataset & Code </a>
+                
+                        </div><!--//media-body-->                                           
+                    </div><!--//media-->
+                </div><!--//item-->
+
+                <div class="item mb-5">
+                    <div class="media">
+                        <img class="mr-1 img-fluid d-none d-md-flex" src="papers/2_FullyConv.png" height="200" width="200" alt="image">
+                        <div class="media-body">
+                            <h6 >Image and Video Stylization Using Fully Convolutional Network</h6>
+                            <p  class="meta mb-1 date">Feida Zhu, and Yizhou Yu. https://arxiv.org/pdf/1811.10872.pdf.</p>
+
+                            <a class="btn btn-link btn-sm" href="papers/2_zhu2017.pdf" target="_blank"">PDF</a>          
+                        </div><!--//media-body-->                                           
+                    </div><!--//media-->
+                </div><!--//item-->
+
 			    <div class="item mb-5">
 				    <div class="media">
-					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/blog/blog-post-thumb-1.jpg" alt="image">
+					    <img class="mr-1 img-fluid d-none d-md-flex" src="papers/1_ImageStylization.png" height="200" width="200" alt="image">
 					    <div class="media-body">
-						    <h3 class="title mb-1"><a href="blog-post.html">Why Every Developer Should Have A Blog</a></h3>
-						    <div class="meta mb-1"><span class="date">Published 2 days ago</span><span class="time">5 min read</span><span class="comment"><a href="#">8 comments</a></span></div>
-						    <div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
-						    <a class="more-link" href="blog-post.html">Read more &rarr;</a>
-					    </div><!--//media-body-->
+						    <h6 >Exemplar-Based Image and Video Stylization Using Fully Convolutional Semantic Features</h6>
+                            <p  class="meta mb-1 date">Feida Zhu, Zhicheng Yan, Jiajun Bu, and Yizhou Yu. IEEE Transactions on Image Processing 26, no. 7 (2017): 3542-3555.</p>
+
+                            <a class="btn btn-link btn-sm" href="papers/1_zhu2017.pdf" target="_blank"">PDF</a>
+                            <a class="btn btn-link btn-sm" href="papers/1_VideoDemo.mp4" target="_blank"">Video Demo</a>
+                
+                        </div><!--//media-body-->                   					    
 				    </div><!--//media-->
 			    </div><!--//item-->
-			    <div class="item mb-5">
-				    <div class="media">
-					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/blog/blog-post-thumb-2.jpg" alt="image">
-					    <div class="media-body">
-						    <h3 class="title mb-1"><a href="blog-post.html">A Guide to Becoming a Full-Stack Developer</a></h3>
-						    <div class="meta mb-1"><span class="date">Published 3 months ago</span><span class="time">3 min read</span><span class="comment"><a href="#">26 comments</a></span></div>
-						    <div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
-						    <a class="more-link" href="blog-post.html">Read more &rarr;</a>
-					    </div><!--//media-body-->
-				    </div><!--//media-->
-			    </div><!--//item-->
-			    
-			    <div class="item mb-5">
-				    <div class="media">
-					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/blog/blog-post-thumb-3.jpg" alt="image">
-					    <div class="media-body">
-						    <h3 class="title mb-1"><a href="blog-post.html">High Performance JavaScript</a></h3>
-						    <div class="meta mb-1"><span class="date">Published 1 month ago</span><span class="time">8 min read</span><span class="comment"><a href="#">12 comments</a></span></div>
-						    <div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
-						    <a class="more-link" href="blog-post.html">Read more &rarr;</a>
-					    </div><!--//media-body-->
-				    </div><!--//media-->
-			    </div><!--//item-->
-			    <div class="item mb-5">
-				    <div class="media">
-					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/blog/blog-post-thumb-4.jpg" alt="image">
-					    <div class="media-body">
-						    <h3 class="title mb-1"><a href="blog-post.html">Top 5 JavaScript Frameworks</a></h3>
-						    <div class="meta mb-1"><span class="date">Published 2 months ago</span><span class="time">15 min read</span><span class="comment"><a href="#">3 comments</a></span></div>
-						    <div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
-						    <a class="more-link" href="blog-post.html">Read more &rarr;</a>
-					    </div><!--//media-body-->
-				    </div><!--//media-->
-			    </div><!--//item-->
-			    
-			    <div class="item mb-5">
-				    <div class="media">
-					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/blog/blog-post-thumb-5.jpg" alt="image">
-					    <div class="media-body">
-						    <h3 class="title mb-1"><a href="blog-post.html">Learn React in 24 Hours</a></h3>
-						    <div class="meta mb-1"><span class="date">Published 2 months ago</span><span class="time">10 min read</span><span class="comment"><a href="#">23 comments</a></span></div>
-						    <div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
-						    <a class="more-link" href="blog-post.html">Read more &rarr;</a>
-					    </div><!--//media-body-->
-				    </div><!--//media-->
-			    </div><!--//item-->
-			    
-			    <div class="item">
-				    <div class="media">
-					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/blog/blog-post-thumb-6.jpg" alt="image">
-					    <div class="media-body">
-						    <h3 class="title mb-1"><a href="blog-post.html">About Remote Working</a></h3>
-						    <div class="meta mb-1"><span class="date">Published 3 months ago</span><span class="time">2 min read</span><span class="comment"><a href="#">1 comment</a></span></div>
-						    <div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
-						    <a class="more-link" href="blog-post.html">Read more &rarr;</a>
-					    </div><!--//media-body-->
-				    </div><!--//media-->
-			    </div><!--//item-->
-			    
+
+                	    
 			   
 		    </div>
 	    </section>
-	    
-	    <!--<footer class="footer text-center py-2 theme-bg-dark">
-		   
-	       <small class="copyright">Designed with <i class="fas fa-heart"></i> by 3rdwavemedia for developers / More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></small>
-		   
-	    </footer> -->
+
+
+
+
+
+
+
+
+        <article class="about-section py-5">
+            <div id="WorkExperience" class="container">
+                <h2 class="title mb-3">Work Experience</h2>
+
+
+                <div class="item mb-5">
+                    <div class="media">
+                        <img class="mr-1 img-fluid d-none d-md-flex" src="work/ntu.jpg" height="100" width="100" alt="image">
+                        <div class="media-body">
+                            <td><div style="float:left;"><b>Nanyang Technological  University </b></div><div style="float:right;"><b>Singapore </b></div></td>
+                            <br>
+                            <td><div style="float:left;"><i>Research Fellow</i></div><div style="float:right;"><i>Feb. 2019 - Now</i></div></td>
+                            <br>
+                            <ul>
+                                <li>  Research about blurriness-guided image enhancement, blurriness detection related problems.
+                                    <ul>
+                                        <li>Propose non-local pyramid networks to capture possible long-range dependences, which is the limitation of convolutional kernels.</li>
+                                    </ul>
+                                </li>
+                                <li>  Responsible for semantic segmentation model in the WASP-NTU co-project to parse the street scenes for auto-driven car. </li> 
+                            </ul>                
+                        </div><!--//media-body-->                                           
+                    </div><!--//media-->
+                </div><!--//item-->
+
+                <div class="item mb-5">
+                    <div class="media">
+                        <img class="mr-1 img-fluid d-none d-md-flex" src="work/alibaba.png" height="100" width="100" alt="image">
+                        <div class="media-body">
+                            <td><div style="float:left;"><b>Alibaba Group </b></div><div style="float:right;"><b>Hangzhou, China </b></div></td>
+                            <br>
+                            <td><div style="float:left;"><i>Intern</i></div><div style="float:right;"><i>Aug. 2018 - Jan.2019</i></div></td>
+                            <br>
+                            <ul>
+                                <li> Learn agile development, everyday contact, collaboration with business team
+                                    <ul>
+                                        <li>Train the 170-point model with state-of-the-art facial landmark detection algorithm.</li>
+                                        <li>Present a novel semi-supervised dual stage model to transfer makeup with both labeled data and unlabeled data.</li>
+                                    </ul>
+                                </li>
+                            </ul>              
+                        </div><!--//media-body-->                                           
+                    </div><!--//media-->
+                </div><!--//item-->
+
+                <div class="item mb-5">
+                    <div class="media">
+                        <img class="mr-1 img-fluid d-none d-md-flex" src="work/hku.png" height="80" width="100" alt="image">
+                        <div class="media-body">
+                            <td><div style="float:left;"><b>The University of Hong Kong, Business School </b></div><div style="float:right;"><b>Hong Kong </b></div></td>
+                            <br>
+                            <td><div style="float:left;"><i>Research Assistant</i></div><div style="float:right;"><i>July. 2017 - Aug. 2017</i></div></td>
+                            <br>
+                            <ul>
+                                <li> Help Prof. Ryan model an engage or dismiss employee problem and solve the constructed ODE to determine when to engage or dismiss employees. We calculate the numerical solution with Matlab ODE module.
+                                </li> 
+                            </ul>            
+                        </div><!--//media-body-->                                           
+                    </div><!--//media-->
+                </div><!--//item-->
+
+                
+                <div class="item mb-5">
+                    <div class="media">
+                        <img class="mr-1 img-fluid d-none d-md-flex" src="work/msra2.png" height="100" width="100" alt="image">
+                        <div class="media-body">
+                            <td><div style="float:left;"><b>Microsoft Research Asia </b></div><div style="float:right;"><b>Beijing, China</b></div></td>
+                            <br>
+                            <td><div style="float:left;"><i>Intern</i></div><div style="float:right;"><i>Jul. 2013 –Sept.2013</i></div></td>
+                            <br>
+                            <ul>
+                                <li> Participated in a project called de-interlacing videos. The project aims to interpolate the missing pixels according to the existing pixels. 
+                                    <ul>
+                                        <li>We test new ideas in Matlab for fast implementation.</li>
+                                        <li>The sophisticated solution is re-implemented with C++ in Visual Studio for efficiency and regulation purpose.</li>
+                                    </ul>
+                                </li>
+                            </ul>            
+                        </div><!--//media-body-->                                           
+                    </div><!--//media-->
+                </div><!--//item-->
+                
+                  
+            </div>
+        </article><!--//about-section-->
+
+
+
+
+
+
+
+
+
+
+
+
+        <article class="about-section py-5">
+            <div id="AboutMe" class="container">
+                <h2 class="title mb-3">About Me</h2>
+                
+                <p> I am currently a postdoc research fellow at Nanyang Technological University (NTU), Singapore, supervised by <a href="https://www3.ntu.edu.sg/home/ekkma/" target="_blank" > Prof. Kai-kuang Ma</a>.  Prior to that, I received my PhD in Computer Science at The University of Hong Kong (HKU), supervised by <a href="https://i.cs.hku.hk/~yzyu/" target="_blank" > Prof. Yizhou Yu</a>, in 2018, and B.Eng. in Automation at University of Science and Technology of China (USTC) in 2014. </p>
+
+                <p> I also went to Zhejiang University two times, studying at Microsoft Visual Perception Laboratory (VIPA) and Alibaba-Zhejiang University Joint Research Institute of Frontier Technologies (AZFT), fortunately advised by <a href="https://person.zju.edu.cn/en/msong" target="_blank" > Prof. Mingli Song</a> and <a href="http://zichengl.net/" target="_blank" > Prof. Zicheng Liao</a>, respectively. </p>
+
+               <!--  <div class="container" style="width:50%">
+                    <div class="row justify-content-around">
+                        <div class="col">
+                            <img class="img-fluid rounded-circle" src="assets/images/schools/ustc.png">
+                        </div>
+                         <div class="col">
+                            <img class="img-fluid" src="assets/images/schools/zju.jpg">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" src="assets/images/schools/hku.png">
+                        </div>
+                    </div>
+                </div>   -->
+                
+                <h5 id="Correspondence" class="mt-5">Address:</h5>
+                <ul>
+                    <li class="list-inline-item">
+                        Media Computing Lab, NTU, 50 Nanyang Ave, Singapore, 639798
+                        <br>
+                        Phone: +65-81207563
+                        <br>
+                        Email: <ins><a href="mailto:zhufeida@connect.hku.hk">zhufeida@connect.hku.hk</a></ins>
+                    </li>
+                </ul> 
+                
+                <h5 class="mt-5">Service:</h5>
+                <ul>
+                    <li> Reviews: TIP, TVCG, Eurographics, ICIP</li>
+                    <li> Teaching Assistant: COMP1111 Computer rogramming and applications, COMP1117 Computer programming, COMP8503 Advanced topics in visual analytics</li>
+                        <ul>
+                            <li>2017 Best Teaching Assistant at Department of Computer Science.</li>
+                        </ul>
+                    </li>
+                </ul> 
+
+                <h5 class="mt-5">My Skills:</h5>
+                <ul>
+                    <li> Programming Language: Python, Matlab, C++, Linux Shell</li>
+                    <li> Research: Machine Learning, Deep Learning, Computer Vision, Data Analysis, Image Processing </li>
+                    <li> Tools: Tensorflow, PyTorch, OpenCV, Caffe, MatConvNet </li>
+                </ul> 
+
+                <h5 class="mt-5">Awards:</h5>
+                <ul>
+                    <li> HKU Postgraduate Scholarship (2014-2018)</li>
+                    <li> 中国科学技术大学校优秀毕业生 2014</li>
+                    <li> 中国科学技术大学校优秀团干部 2013</li>
+                    <li> 计算机与信息科技英才班 (2010-2014)</li>
+                    <li> 国家励志奖学金,优秀学生奖学金,英才班奖学金 </li>
+                    <li> 全国大学生科技创新优秀奖 2014 </li>
+
+                </ul> 
+                
+                
+                <!-- <a class="btn btn-outline-primary btn-lg" href="朱飞达.pdf" target="_blank">CV</a> -->
+
+            </div>
+        </article><!--//about-section-->
     
     </div><!--//main-wrapper-->
     
